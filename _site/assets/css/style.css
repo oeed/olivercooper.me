@@ -47,7 +47,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: #aee5e3;
+  background: #81cefd;
   z-index: -1; }
   .hero .welcome-wrap {
     display: flex;
@@ -70,13 +70,13 @@
       text-transform: uppercase;
       font-weight: 500;
       font-size: 28px;
-      color: #135661;
+      color: #1b4787;
       letter-spacing: 0.06em;
       margin: 30px 0 0; }
     .hero .welcome h2 {
       font-size: 17px;
       font-weight: 300;
-      color: #388189;
+      color: #4889c9;
       letter-spacing: 0.04em;
       margin: 0 0 40px; }
     .hero .welcome .links {
@@ -88,7 +88,7 @@
         font-weight: 500;
         font-size: 24px; }
         .hero .welcome .links li a {
-          color: #135661;
+          color: #1b4787;
           text-decoration: none; }
 
 .parallax {
@@ -157,20 +157,22 @@ h1 {
   position: relative;
   overflow: auto;
   height: 800px;
-  background: #042733;
+  background: #03082b;
   color: white; }
 
 .aboutme {
   position: relative;
   overflow: auto;
   height: 1000px;
-  background-color: #aee5e3;
+  background-color: #81cefd;
   background-image: url(/assets/images/aboutme.svg);
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 32%;
-  color: #042733; }
+  color: white; }
+  .aboutme h1 {
+    text-shadow: 5px 4px #1b4787; }
 
 html, body {
   margin: 0;
