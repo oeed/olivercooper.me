@@ -1,7 +1,6 @@
 .portfolio
 	position: relative
 	overflow: auto
-	height: 800px
 	background: $ground
 	color: white
 
@@ -22,6 +21,18 @@
 
 	li
 		display: flex
+		margin-bottom: 120px
+
+		&:nth-child(even)
+			.details
+				order: 2
+				text-align: right
+				margin-right: 0
+				margin-left: 100px
+
+	.details
+		margin-right: 100px
+		flex-grow: 1
 
 	.preview
 		width: 500px
@@ -30,14 +41,8 @@
 		background-size: cover
 		background-repeat: no-repeat
 
-		&.thecore
-			background-image: url(/assets/images/portfolio/thecore.png)
-
-	.details
-		margin-right: 100px
-		flex-grow: 1
-
 	p
 		font-size: 22px
 		font-weight: 300
 		max-width: 480px
+		display: inline-block

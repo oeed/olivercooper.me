@@ -37,13 +37,15 @@ layout: default
 	<h1>Portfolio</h1>
 	<div class="container">
 		<ul>
-			<li>
-				<div class="details">
-					<a href="https://www.thecore.co.nz/"><h2>The Core <span class="type">Website</span></h2></a>
-					<p>Jekyll powered site featuring highly optimised SEO and an intuitive bespoke booking wizard.</p>
-				</div>
-				<div class="preview thecore"></div>
-			</li>
+			{% for project in site.projects %}
+				<li>
+					<div class="details">
+						<a href="{{ project.link }}"><h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2></a>
+						{{ project.content }}
+					</div>
+					<a href="{{ project.link }}"><div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div></a>
+				</li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>
