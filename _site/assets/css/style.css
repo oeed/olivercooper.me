@@ -42,6 +42,28 @@
   font-style: italic;
   src: url("/assets/fonts/orkney/Orkney Bold Italic.eot");
   src: url("/assets/fonts/orkney/Orkney Bold Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/orkney/Orkney Bold Italic.woff2") format("woff2"), url("/assets/fonts/orkney/Orkney Bold Italic.woff") format("woff"), url("/assets/fonts/orkney/Orkney Bold Italic.ttf") format("truetype"); }
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  font-size: 70px;
+  letter-spacing: 0.06em;
+  margin-bottom: 100px; }
+
+.container {
+  width: 1100px;
+  margin: 0 auto; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 .hero {
   display: flex;
   width: 100vw;
@@ -145,20 +167,46 @@
     transform: translateX(0%); }
   to {
     transform: translateX(50%); } }
-h1 {
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
-  font-size: 70px;
-  letter-spacing: 0.06em; }
-
 .portfolio {
   position: relative;
   overflow: auto;
-  height: 800px;
   background: #03082b;
   color: white; }
+  .portfolio h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    margin-bottom: 15px; }
+    .portfolio h2 .type {
+      font-size: 24px;
+      font-weight: normal;
+      color: #285da9;
+      margin-left: 10px;
+      vertical-align: middle; }
+  .portfolio li {
+    display: flex;
+    margin-bottom: 120px; }
+    .portfolio li:nth-child(even) .details {
+      order: 2;
+      text-align: right;
+      margin-right: 0;
+      margin-left: 100px; }
+  .portfolio .details {
+    margin-right: 100px;
+    flex-grow: 1; }
+  .portfolio .preview {
+    width: 500px;
+    height: 330px;
+    flex: 0 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portfolio p {
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 480px;
+    display: inline-block; }
 
 .aboutme {
   position: relative;
@@ -172,7 +220,7 @@ h1 {
   padding-top: 32%;
   color: white; }
   .aboutme h1 {
-    text-shadow: 5px 4px #1b4787; }
+    text-shadow: 5px 4px #4d85b9; }
 
 html, body {
   margin: 0;
