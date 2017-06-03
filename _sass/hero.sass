@@ -1,0 +1,117 @@
+.hero
+	display: flex
+	width: 100vw
+	height: 100vh
+	position: relative
+	background: $sky
+	z-index: -1
+
+	.welcome-wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+	.gap
+		height: 20vw
+		flex-shrink: 0
+
+	.welcome
+		width: 500px
+		height: 300px
+		text-align: center
+
+		.hello
+			width: 100%
+			padding-top: 27%
+			background: url(/assets/images/hello.svg) no-repeat center
+			background-size: contain
+
+		h1
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 28px
+			color: $titleDark
+			letter-spacing: 0.06em
+			margin: 30px 0 0
+
+		h2
+			font-size: 17px
+			font-weight: 300
+			color: $subtitleDark
+			letter-spacing: 0.04em
+			margin: 0 0 40px
+
+		.links
+			display: flex
+			justify-content: space-around
+			padding: 0
+
+			li
+				display: block
+				font-weight: 500
+				font-size: 24px
+
+				a
+					color: $titleDark
+					text-decoration: none
+
+.parallax
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+
+	& > div
+		position: fixed
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-size: 100% auto
+		background-position: center bottom
+		background-repeat: no-repeat
+
+		&.front
+			position: absolute
+
+	.dynamic
+		position: fixed
+		left: -50%
+		width: 200%
+		top: 0
+		bottom: 0
+		background-position: center top
+		background-size: 50% auto
+		background-repeat: repeat-x
+
+		&.clouds
+			background-image: url(/assets/images/parallax/clouds-dynamic.svg)
+
+			// animation: sky linear infinite 300s
+
+		&.plane
+			background-image: url(/assets/images/parallax/plane.svg)
+
+			// animation: sky linear infinite 125s
+
+	$layers: "clouds-static", false, "sea", "rangitoto", "north-shore", "orakei", "city", ("hobson", "eden"), "st-john", "one-tree"
+
+	@for $i from 1 through length($layers)
+		@if nth($layers, $i)
+			.layer-#{$i}
+				$bg: ""
+
+				// @for $n from 1 through length(nth($layers, $i))
+				@each $name in nth($layers, $i)
+					$bg: $bg + "url(/assets/images/parallax/" + $name + ".svg),"
+
+				background-image: #{str-slice($bg, 1, str-length($bg) - 1)}
+
+@keyframes sky
+	from
+		transform: translateX(0%)
+
+	to
+		transform: translateX(50%)

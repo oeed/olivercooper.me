@@ -1,0 +1,12 @@
+=font-face($path, $family, $weight, $style: false)
+	@font-face
+		font-family: $family
+		font-weight: $weight
+
+		@if $style
+			font-style: $style
+
+		src: url("/assets/fonts/" + $path + ".eot")
+		src: url("/assets/fonts/" + $path + ".eot?#iefix") format("embedded-opentype"), url("/assets/fonts/" + $path + ".woff2") format("woff2"), url("/assets/fonts/" + $path + ".woff") format("woff"), url("/assets/fonts/" + $path + ".ttf") format("truetype")
+
+@import orkney
