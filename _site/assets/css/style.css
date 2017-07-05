@@ -12,11 +12,6 @@
 @font-face {
   font-family: "Orkney";
   font-weight: normal;
-  src: url("/assets/fonts/orkney/Orkney Regular.eot");
-  src: url("/assets/fonts/orkney/Orkney Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/orkney/Orkney Regular.woff2") format("woff2"), url("/assets/fonts/orkney/Orkney Regular.woff") format("woff"), url("/assets/fonts/orkney/Orkney Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: "Orkney";
-  font-weight: normal;
   font-style: italic;
   src: url("/assets/fonts/orkney/Orkney Regular Italic.eot");
   src: url("/assets/fonts/orkney/Orkney Regular Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/orkney/Orkney Regular Italic.woff2") format("woff2"), url("/assets/fonts/orkney/Orkney Regular Italic.woff") format("woff"), url("/assets/fonts/orkney/Orkney Regular Italic.ttf") format("truetype"); }
@@ -25,17 +20,6 @@
   font-weight: 500;
   src: url("/assets/fonts/orkney/Orkney Medium.eot");
   src: url("/assets/fonts/orkney/Orkney Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/orkney/Orkney Medium.woff2") format("woff2"), url("/assets/fonts/orkney/Orkney Medium.woff") format("woff"), url("/assets/fonts/orkney/Orkney Medium.ttf") format("truetype"); }
-@font-face {
-  font-family: "Orkney";
-  font-weight: 500;
-  font-style: italic;
-  src: url("/assets/fonts/orkney/Orkney Medium Italic.eot");
-  src: url("/assets/fonts/orkney/Orkney Medium Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/orkney/Orkney Medium Italic.woff2") format("woff2"), url("/assets/fonts/orkney/Orkney Medium Italic.woff") format("woff"), url("/assets/fonts/orkney/Orkney Medium Italic.ttf") format("truetype"); }
-@font-face {
-  font-family: "Orkney";
-  font-weight: bold;
-  src: url("/assets/fonts/orkney/Orkney Bold.eot");
-  src: url("/assets/fonts/orkney/Orkney Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/orkney/Orkney Bold.woff2") format("woff2"), url("/assets/fonts/orkney/Orkney Bold.woff") format("woff"), url("/assets/fonts/orkney/Orkney Bold.ttf") format("truetype"); }
 @font-face {
   font-family: "Orkney";
   font-weight: bold;
@@ -51,9 +35,31 @@ h1 {
   letter-spacing: 0.06em;
   margin-bottom: 100px; }
 
+h3 {
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  margin-top: -85px;
+  margin-bottom: 100px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #81cefd;
+  text-align: center; }
+
 .container {
-  width: 1100px;
   margin: 0 auto; }
+  @media only screen and (min-width: 350px) {
+    .container {
+      width: 350px; } }
+  @media only screen and (min-width: 700px) {
+    .container {
+      width: 700px; } }
+  @media only screen and (min-width: 900px) {
+    .container {
+      width: 900px; } }
+  @media only screen and (min-width: 1100px) {
+    .container {
+      width: 1100px; } }
 
 ul {
   margin: 0;
@@ -69,8 +75,7 @@ a {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: #81cefd;
-  z-index: -1; }
+  background: #81cefd; }
   .hero .welcome-wrap {
     display: flex;
     flex-direction: column;
@@ -130,6 +135,9 @@ a {
     background-repeat: no-repeat; }
     .parallax > div.front {
       position: absolute; }
+    .parallax > div.layer-3, .parallax > div.layer-4 {
+      pointer-events: none;
+      -webkit-touch-callout: none; }
   .parallax .dynamic {
     position: fixed;
     left: -50%;
@@ -143,23 +151,15 @@ a {
       background-image: url(/assets/images/parallax/clouds-dynamic.svg); }
     .parallax .dynamic.plane {
       background-image: url(/assets/images/parallax/plane.svg); }
+  .parallax .layer-0 {
+    background-image: url(/assets/images/parallax/rangitoto.svg),url(/assets/images/parallax/sea.svg),url(/assets/images/parallax/clouds-static.svg); }
   .parallax .layer-1 {
-    background-image: url(/assets/images/parallax/clouds-static.svg); }
-  .parallax .layer-3 {
-    background-image: url(/assets/images/parallax/sea.svg); }
-  .parallax .layer-4 {
-    background-image: url(/assets/images/parallax/rangitoto.svg); }
-  .parallax .layer-5 {
-    background-image: url(/assets/images/parallax/north-shore.svg); }
-  .parallax .layer-6 {
-    background-image: url(/assets/images/parallax/orakei.svg); }
-  .parallax .layer-7 {
+    background-image: url(/assets/images/parallax/north-shore.svg),url(/assets/images/parallax/orakei.svg); }
+  .parallax .layer-2 {
     background-image: url(/assets/images/parallax/city.svg); }
-  .parallax .layer-8 {
-    background-image: url(/assets/images/parallax/hobson.svg),url(/assets/images/parallax/eden.svg); }
-  .parallax .layer-9 {
-    background-image: url(/assets/images/parallax/st-john.svg); }
-  .parallax .layer-10 {
+  .parallax .layer-3 {
+    background-image: url(/assets/images/parallax/hobson.svg),url(/assets/images/parallax/st-john.svg),url(/assets/images/parallax/eden.svg); }
+  .parallax .layer-4 {
     background-image: url(/assets/images/parallax/one-tree.svg); }
 
 @keyframes sky {
@@ -178,13 +178,42 @@ a {
     font-weight: bold;
     font-style: italic;
     letter-spacing: 0.06em;
-    margin-bottom: 15px; }
+    margin-bottom: 0; }
     .portfolio h2 .type {
       font-size: 24px;
       font-weight: normal;
-      color: #285da9;
+      color: #4889c9;
       margin-left: 10px;
       vertical-align: middle; }
+  .portfolio li {
+    margin-bottom: 90px; }
+  .portfolio .details {
+    text-align: center; }
+  .portfolio .preview {
+    width: 500px;
+    height: 310px;
+    flex: 0 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto; }
+  .portfolio p {
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 480px;
+    display: inline-block; }
+
+@media only screen and (max-width: 549px) {
+  .hero .welcome .hello {
+    width: 90vw;
+    padding-top: 0;
+    height: 24vw;
+    margin: 0 auto; }
+
+  .hero .welcome .links {
+    display: none; } }
+@media only screen and (min-width: 1100px) {
+  .portfolio h2 {
+    margin-bottom: 15px; }
   .portfolio li {
     display: flex;
     margin-bottom: 120px; }
@@ -194,33 +223,114 @@ a {
       margin-right: 0;
       margin-left: 100px; }
   .portfolio .details {
+    text-align: initial;
     margin-right: 100px;
     flex-grow: 1; }
+
+  .aboutme ul li {
+    display: flex;
+    margin-bottom: 120px; }
+    .aboutme ul li:nth-child(even) .details {
+      order: 2;
+      text-align: right;
+      margin-right: 0;
+      margin-left: 120px; }
+    .aboutme ul li .details {
+      margin-right: 120px;
+      flex-grow: 1;
+      text-align: initial; }
+  .aboutme .cards {
+    width: 460px;
+    margin: 0; } }
+@media only screen and (max-width: 699px) {
+  h1 {
+    font-size: 60px; }
+
   .portfolio .preview {
-    width: 500px;
-    height: 330px;
-    flex: 0 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .portfolio p {
+    width: 350px;
+    height: 217px; }
+  .portfolio h2 .type {
+    margin-left: 0;
+    display: block; } }
+.more {
+  text-align: center;
+  display: block; }
+  .more div {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
     font-size: 22px;
-    font-weight: 300;
-    max-width: 480px;
-    display: inline-block; }
+    border-bottom: 2px dashed #4889c9;
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 3px; }
 
 .aboutme {
   position: relative;
-  overflow: auto;
-  height: 1000px;
-  background-color: #81cefd;
+  background-color: #69bdef;
   background-image: url(/assets/images/aboutme.svg);
-  background-position: center top;
+  background-position: center -1px;
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 32%;
-  color: white; }
+  color: white;
+  overflow-x: hidden; }
   .aboutme h1 {
     text-shadow: 5px 4px #4d85b9; }
+  .aboutme li {
+    margin-bottom: 120px; }
+    .aboutme li .details {
+      text-align: center;
+      font-size: 22px;
+      text-shadow: 2px 1px rgba(77, 133, 185, 0.75); }
+  .aboutme h2 {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    margin-bottom: 15px;
+    text-shadow: 4px 3px #4d85b9; }
+
+.cards {
+  width: 100%;
+  height: 310px;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 100px auto 0px; }
+  .cards img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 250px;
+    box-shadow: 4px 4px rgba(11, 39, 99, 0.44);
+    transition: transform cubic-bezier(0.13, 0.85, 0.09, 0.98) 2.3s; }
+    .cards img:nth-child(1) {
+      transform: translate(-75%, -67%) rotate(-15deg); }
+    .cards img:nth-child(2) {
+      transform: translate(-11%, -63%) rotate(8deg); }
+    .cards img:nth-child(3) {
+      transform: translate(-67%, -40%) rotate(-6deg); }
+    .cards img:nth-child(4) {
+      transform: translate(-12%, -28%) rotate(6deg); }
+    .cards img:nth-child(5) {
+      transform: translate(-58%, -53%) rotate(3deg); }
+    .cards img:nth-child(6) {
+      transform: translate(-46%, -46%) rotate(-5deg); }
+  .cards:hover img:nth-child(1) {
+    transform: translate(-100%, -77%) rotate(-21deg); }
+  .cards:hover img:nth-child(2) {
+    transform: translate(10%, -91%) rotate(12deg); }
+  .cards:hover img:nth-child(3) {
+    transform: translate(-104%, -10%) rotate(-10deg); }
+  .cards:hover img:nth-child(4) {
+    transform: translate(28%, 0%) rotate(13deg); }
+  .cards:hover img:nth-child(5) {
+    transform: translate(-42%, -59%) rotate(5deg); }
+  .cards:hover img:nth-child(6) {
+    transform: translate(-49%, -2%) rotate(-6deg); }
 
 html, body {
   margin: 0;

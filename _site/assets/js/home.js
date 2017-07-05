@@ -1,18 +1,61 @@
+(function() {
+    var lastTime = 0;
+    var vendors = ['webkit', 'moz'];
+    for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+        window.cancelAnimationFrame =
+            window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+    }
+
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() {
+                    callback(currTime + timeToCall);
+                },
+                timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
 function parallax() {
     var layers = $('.parallax > div:not(.front)').get();
-    for (var i = 0; i < layers.length; i++) {
+    var len = 4;
+    for (var i = 1; i < len /*layers.length*/ ; i++) {
         layers[i].rate = layers[i].getAttribute('data-rate');
     }
 
+    function update() {
+        var top = -window.pageYOffset / 100;
+        var layer, speed, yPos;
+        for (var i = 1; i < len /*layers.length*/ ; i++) {
+            layer = layers[i];
+            var yPos = top * layer.rate;
+            layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+        }
+    }
+
+    var parallaxElem = $(".parallax").get()[0];
+
+    var isHidden = false;
     window.addEventListener("scroll", function(event) {
-        if (this.pageYOffset < this.innerHeight) {
-            var top = -this.pageYOffset / 100;
-            var layer, speed, yPos;
-            for (var i = 0; i < layers.length; i++) {
-                layer = layers[i];
-                var yPos = top * layer.rate;
-                layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+        if (window.pageYOffset < window.innerHeight + 200) {
+            if (isHidden) {
+                isHidden = false;
+                parallaxElem.setAttribute("style", "");
             }
+            requestAnimationFrame(update)
+        }
+        else if (!isHidden) {
+            isHidden = true;
+            parallaxElem.setAttribute("style", "display:none;");
         }
     });
 }

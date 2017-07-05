@@ -4,7 +4,6 @@
 	height: 100vh
 	position: relative
 	background: $sky
-	z-index: -1
 
 	.welcome-wrap
 		display: flex
@@ -76,6 +75,10 @@
 		&.front
 			position: absolute
 
+		&.layer-3, &.layer-4
+			pointer-events: none
+			-webkit-touch-callout: none
+
 	.dynamic
 		position: fixed
 		left: -50%
@@ -96,11 +99,11 @@
 
 			// animation: sky linear infinite 125s
 
-	$layers: "clouds-static", false, "sea", "rangitoto", "north-shore", "orakei", "city", ("hobson", "eden"), "st-john", "one-tree"
+	$layers: ("rangitoto", "sea", "clouds-static"), ("north-shore", "orakei"), "city", ("hobson", "st-john", "eden"), "one-tree"
 
 	@for $i from 1 through length($layers)
 		@if nth($layers, $i)
-			.layer-#{$i}
+			.layer-#{$i - 1}
 				$bg: ""
 
 				// @for $n from 1 through length(nth($layers, $i))

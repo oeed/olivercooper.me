@@ -1,0 +1,70 @@
+$width-max: 1100px
+$width-large: 900px
+$width-medium: 700px
+$width-small: 350px
+$sizes: 350px, 700px, 900px, 1100px
+
+=min-width($width)
+	@media only screen and (min-width: $width)
+		$container-width: $width !global
+
+		@content
+
+=max-width($width)
+	@media only screen and (max-width: $width - 1)
+		$container-width: $width !global
+
+		@content
+
+=responsive
+	@each $size in $sizes
+		+min-width($size)
+			@content
+
+=max
+	+min-width($width-max)
+		@content
+
+=large
+	+min-width($width-large)
+		@content
+
+=medium
+	+min-width($width-medium)
+		@content
+
+=small
+	+min-width($width-small)
+		@content
+
+=lt-max
+	+max-width($width-max)
+		@content
+
+=lt-large
+	+max-width($width-large)
+		@content
+
+=lt-medium
+	+max-width($width-medium)
+		@content
+
+=lt-small
+	+max-width($width-small)
+		@content
+
+=gt-large
+	+large
+		@content
+
+
+	+max
+		@content
+
+=gt-medium
+	+medium
+		@content
+
+
+	+gt-large
+		@content
