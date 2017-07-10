@@ -74,7 +74,6 @@ a {
   display: flex;
   width: 100vw;
   height: 100vh;
-  position: relative;
   background: #81cefd; }
   .hero .welcome-wrap {
     display: flex;
@@ -134,7 +133,8 @@ a {
     background-position: center bottom;
     background-repeat: no-repeat; }
     .parallax > div.front {
-      position: absolute; }
+      position: absolute;
+      bottom: -41.67vw; }
     .parallax > div.layer-3, .parallax > div.layer-4 {
       pointer-events: none;
       -webkit-touch-callout: none; }
