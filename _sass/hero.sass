@@ -69,9 +69,19 @@
 		right: 0
 		top: 0
 		bottom: 0
-		background-size: 100% auto
-		background-position: center bottom
-		background-repeat: no-repeat
+
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-size: 500% auto
+			background-position: center bottom
+			background-repeat: no-repeat
+			background-position-y: top
+			background-image: url(/assets/images/parallax/layers.svg)
 
 		&.front
 			position: absolute
@@ -105,14 +115,11 @@
 
 	@for $i from 1 through length($layers)
 		@if nth($layers, $i)
-			.layer-#{$i - 1}
-				$bg: ""
 
 				// @for $n from 1 through length(nth($layers, $i))
-				@each $name in nth($layers, $i)
-					$bg: $bg + "url(/assets/images/parallax/" + $name + ".svg),"
 
-				background-image: #{str-slice($bg, 1, str-length($bg) - 1)}
+			.layer-#{$i - 1}:after
+				background-position-x: ($i - 1) * 25%
 
 @keyframes sky
 	from
