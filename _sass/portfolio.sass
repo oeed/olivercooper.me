@@ -32,6 +32,14 @@
 		background-size: cover
 		background-repeat: no-repeat
 		margin: 0 auto
+		transition: transform 0.1s cubic-bezier(0.215, 0.61, 0.355, 1)
+
+	a > .preview
+		&:hover
+			transform: scale(1.04)
+
+		&:active
+			transform: scale(0.97)
 
 	p
 		font-size: 22px

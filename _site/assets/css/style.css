@@ -126,16 +126,25 @@ a {
   .parallax > div {
     position: fixed;
     left: 0;
-    right: 0;
-    top: 0;
     bottom: 0;
-    background-size: 100% auto;
-    background-position: center bottom;
-    background-repeat: no-repeat; }
+    right: 0;
+    top: 0; }
+    .parallax > div:after {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size: 500% auto;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-image: url(/assets/images/parallax/layers.svg); }
     .parallax > div.front {
       position: absolute;
       bottom: -41.67vw; }
-    .parallax > div.layer-3, .parallax > div.layer-4 {
+    .parallax > div.layer-3, .parallax > div.layer-3, .parallax > div.layer-4 {
       pointer-events: none;
       -webkit-touch-callout: none; }
   .parallax .dynamic {
@@ -148,19 +157,21 @@ a {
     background-size: 50% auto;
     background-repeat: repeat-x; }
     .parallax .dynamic.clouds {
-      background-image: url(/assets/images/parallax/clouds-dynamic.svg); }
+      background-image: url(/assets/images/parallax/clouds-dynamic.svg);
+      animation: sky linear infinite 300s; }
     .parallax .dynamic.plane {
-      background-image: url(/assets/images/parallax/plane.svg); }
-  .parallax .layer-0 {
-    background-image: url(/assets/images/parallax/rangitoto.svg),url(/assets/images/parallax/sea.svg),url(/assets/images/parallax/clouds-static.svg); }
-  .parallax .layer-1 {
-    background-image: url(/assets/images/parallax/north-shore.svg),url(/assets/images/parallax/orakei.svg); }
-  .parallax .layer-2 {
-    background-image: url(/assets/images/parallax/city.svg); }
-  .parallax .layer-3 {
-    background-image: url(/assets/images/parallax/hobson.svg),url(/assets/images/parallax/st-john.svg),url(/assets/images/parallax/eden.svg); }
-  .parallax .layer-4 {
-    background-image: url(/assets/images/parallax/one-tree.svg); }
+      background-image: url(/assets/images/parallax/plane.svg);
+      animation: sky linear infinite 125s; }
+  .parallax .layer-0:after {
+    background-position-x: 0%; }
+  .parallax .layer-1:after {
+    background-position-x: 25%; }
+  .parallax .layer-2:after {
+    background-position-x: 50%; }
+  .parallax .layer-3:after {
+    background-position-x: 75%; }
+  .parallax .layer-4:after {
+    background-position-x: 100%; }
 
 @keyframes sky {
   from {
@@ -195,7 +206,12 @@ a {
     flex: 0 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: transform 0.1s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .portfolio a > .preview:hover {
+    transform: scale(1.04); }
+  .portfolio a > .preview:active {
+    transform: scale(0.97); }
   .portfolio p {
     font-size: 22px;
     font-weight: 300;

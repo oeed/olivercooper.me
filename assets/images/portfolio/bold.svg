@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="310px" viewBox="0 0 500 310" enable-background="new 0 0 500 310" xml:space="preserve">
+<rect fill="#FBFBFB" width="500" height="310"/>
+<g id="Timeline_Base">
+	<g opacity="0.8">
+		<text transform="matrix(1 0 0 1 275.9951 45.481)" fill="#545F7F" font-family="'Avenir-Book'" font-size="15.3639">1s</text>
+	</g>
+	
+		<line fill="none" stroke="#F0F0F0" stroke-width="1.2803" stroke-miterlimit="10" x1="282.471" y1="50.175" x2="282.471" y2="385.62"/>
+	
+		<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="214.614" y1="50.175" x2="214.614" y2="385.62"/>
+	<g opacity="0.8">
+		<text transform="matrix(1 0 0 1 411.71 45.481)" fill="#545F7F" font-family="'Avenir-Book'" font-size="15.3639">2s</text>
+	</g>
+	
+		<line fill="none" stroke="#F0F0F0" stroke-width="1.2803" stroke-miterlimit="10" x1="418.186" y1="50.175" x2="418.186" y2="385.62"/>
+	
+		<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="350.328" y1="50.175" x2="350.328" y2="385.62"/>
+	<g opacity="0.8">
+		<text transform="matrix(1 0 0 1 547.4248 45.481)" fill="#545F7F" font-family="'Avenir-Book'" font-size="15.3639">3s</text>
+	</g>
+	<line fill="none" stroke="#F0F0F0" stroke-width="1.2803" stroke-miterlimit="10" x1="553.9" y1="50.175" x2="553.9" y2="385.62"/>
+	
+		<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="486.043" y1="50.175" x2="486.043" y2="385.62"/>
+	<g opacity="0.8">
+		<text transform="matrix(1 0 0 1 683.1387 45.481)" fill="#545F7F" font-family="'Avenir-Book'" font-size="15.3639">4s</text>
+	</g>
+	
+		<line fill="none" stroke="#F0F0F0" stroke-width="1.2803" stroke-miterlimit="10" x1="689.614" y1="50.175" x2="689.614" y2="385.62"/>
+	
+		<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="621.758" y1="50.175" x2="621.758" y2="385.62"/>
+</g>
+<text transform="matrix(1 0 0 1 74.2485 71.5151)" fill="#575757" font-family="'Avenir-Medium'" font-size="19.2049">Rotate</text>
+<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="4" y1="78.982" x2="135.874" y2="78.982"/>
+<text transform="matrix(1 0 0 1 83.1597 117.6069)" fill="#575757" font-family="'Avenir-Medium'" font-size="19.2049">Move</text>
+<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="4" y1="140.438" x2="135.874" y2="140.438"/>
+<text transform="matrix(1 0 0 1 43.3301 162.418)" fill="#575757" font-family="'Avenir-Medium'" font-size="19.2049">Fill Colour</text>
+<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="4" y1="169.885" x2="135.874" y2="169.885"/>
+<text transform="matrix(1 0 0 1 14.1768 191.8652)" fill="#575757" font-family="'Avenir-Medium'" font-size="19.2049">Border Width</text>
+<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="4" y1="199.333" x2="135.874" y2="199.333"/>
+<text transform="matrix(1 0 0 1 63.9937 220.0332)" fill="#575757" font-family="'Avenir-Medium'" font-size="19.2049">Opacity</text>
+<line fill="none" stroke="#F5F5F5" stroke-width="1.2803" stroke-miterlimit="10" x1="4" y1="227.5" x2="135.874" y2="227.5"/>
+<path fill="#FF931E" d="M280.551,56.576c0-2.112-1.729-3.841-3.842-3.841H152.518c-2.112,0-3.841,1.729-3.841,3.841v19.205
+	c0,2.113,1.729,3.841,3.841,3.841h124.191c2.113,0,3.842-1.728,3.842-3.841V56.576z"/>
+<text transform="matrix(1 0 0 1 156.146 70.1978)" opacity="0.8" fill="#FFFFFF" enable-background="new    " font-family="'Avenir-Book'" font-size="12.8033">10˚</text>
+<text transform="matrix(1 0 0 1 255.5596 70.1978)" opacity="0.8" fill="#FFFFFF" enable-background="new    " font-family="'Avenir-Book'" font-size="12.8033">95˚</text>
+<path fill="#FF931E" d="M416.265,86.024c0-2.113-1.728-3.841-3.841-3.841H220.375c-2.112,0-3.841,1.729-3.841,3.841v19.205
+	c0,2.113,1.729,3.841,3.841,3.841h192.049c2.113,0,3.841-1.728,3.841-3.841V86.024z"/>
+<text transform="matrix(1 0 0 1 224.0029 99.645)" opacity="0.8" fill="#FFFFFF" enable-background="new    " font-family="'Avenir-Book'" font-size="12.8033">0, 0</text>
+<text transform="matrix(1 0 0 1 380.417 99.645)" opacity="0.8" fill="#FFFFFF" enable-background="new    " font-family="'Avenir-Book'" font-size="12.8033">5, 15</text>
+<path fill="#7AC943" d="M551.979,56.576c0-2.112-1.728-3.841-3.841-3.841H356.09c-2.113,0-3.841,1.729-3.841,3.841v19.205
+	c0,2.113,1.728,3.841,3.841,3.841h192.049c2.113,0,3.841-1.728,3.841-3.841V56.576z"/>
+<path fill="#FFFFFF" d="M549.419,57.856c0-1.408-1.153-2.561-2.561-2.561H357.37c-1.408,0-2.561,1.153-2.561,2.561v16.645
+	c0,1.408,1.152,2.561,2.561,2.561h189.488c1.407,0,2.561-1.152,2.561-2.561V57.856z"/>
+<text transform="matrix(1 0 0 1 359.7178 70.1978)" fill="#7AC943" font-family="'Avenir-Book'" font-size="12.8033">95˚</text>
+<text transform="matrix(1 0 0 1 516.0293 70.1978)" fill="#7AC943" font-family="'Avenir-Book'" font-size="12.8033">125˚</text>
+<g>
+	<path fill="#FF931E" d="M280.551,174.366c0-2.112-1.729-3.841-3.842-3.841H152.518c-2.112,0-3.841,1.729-3.841,3.841v19.205
+		c0,2.113,1.729,3.841,3.841,3.841h124.191c2.113,0,3.842-1.728,3.842-3.841V174.366z"/>
+	
+		<text transform="matrix(1 0 0 1 156.146 187.9883)" opacity="0.8" fill="#FFFFFF" enable-background="new    " font-family="'Avenir-Book'" font-size="12.8033">2px</text>
+	
+		<text transform="matrix(1 0 0 1 251.7568 187.9883)" opacity="0.8" fill="#FFFFFF" enable-background="new    " font-family="'Avenir-Book'" font-size="12.8033">6px</text>
+	<path fill="#FF7BAC" d="M416.265,203.814c0-2.122-1.719-3.842-3.841-3.842H288.232c-2.122,0-3.841,1.72-3.841,3.842v19.204
+		c0,2.122,1.719,3.841,3.841,3.841h124.191c2.122,0,3.841-1.719,3.841-3.841V203.814z"/>
+	<path fill="#FF7BAC" d="M551.979,203.814c0-2.122-1.719-3.842-3.841-3.842H423.947c-2.122,0-3.842,1.72-3.842,3.842v19.204
+		c0,2.122,1.72,3.841,3.842,3.841h124.191c2.122,0,3.841-1.719,3.841-3.841V203.814z"/>
+	<text transform="matrix(1 0 0 1 291.8604 218.7148)" fill="#FFFFFF" font-family="'Avenir-Book'" font-size="12.8033">0%</text>
+	<text transform="matrix(1 0 0 1 376.5635 218.7148)" fill="#FFFFFF" font-family="'Avenir-Book'" font-size="12.8033">100%</text>
+	<text transform="matrix(1 0 0 1 423.9355 218.7148)" fill="#FFFFFF" font-family="'Avenir-Book'" font-size="12.8033">100%</text>
+	<text transform="matrix(1 0 0 1 528.0098 218.7148)" fill="#FFFFFF" font-family="'Avenir-Book'" font-size="12.8033">0%</text>
+	<path fill="#3FA9F5" d="M484.122,144.919c0-2.112-1.728-3.841-3.841-3.841H220.375c-2.112,0-3.841,1.729-3.841,3.841v19.205
+		c0,2.112,1.729,3.841,3.841,3.841h259.906c2.113,0,3.841-1.729,3.841-3.841V144.919z"/>
+	<path fill="#7AC943" d="M551.979,115.472c0-2.113-1.728-3.841-3.841-3.841H356.09c-2.113,0-3.841,1.729-3.841,3.841v19.205
+		c0,2.113,1.728,3.841,3.841,3.841h192.049c2.113,0,3.841-1.729,3.841-3.841V115.472z"/>
+	<path fill="#FFFFFF" d="M549.419,116.752c0-1.408-1.153-2.561-2.561-2.561H357.37c-1.408,0-2.561,1.152-2.561,2.561v16.644
+		c0,1.409,1.152,2.561,2.561,2.561h189.488c1.407,0,2.561-1.152,2.561-2.561V116.752z"/>
+	<text transform="matrix(1 0 0 1 359.7178 129.0923)" fill="#7AC943" font-family="'Avenir-Book'" font-size="12.8033">34, 67</text>
+	<text transform="matrix(1 0 0 1 504.8643 129.0923)" fill="#7AC943" font-family="'Avenir-Book'" font-size="12.8033">98, 45</text>
+	<circle fill="#25B23A" cx="235.099" cy="154.521" r="5.762"/>
+	<path fill="#FFFFFF" d="M235.099,148.76c3.182,0,5.762,2.581,5.762,5.762c0,3.184-2.58,5.763-5.762,5.763
+		c-3.181,0-5.761-2.579-5.761-5.763C229.337,151.341,231.917,148.76,235.099,148.76 M235.099,147.479
+		c-3.883,0-7.042,3.158-7.042,7.042c0,3.883,3.158,7.043,7.042,7.043c3.884,0,7.042-3.16,7.042-7.043
+		C242.141,150.638,238.983,147.479,235.099,147.479L235.099,147.479z"/>
+	<circle fill="#006837" cx="465.558" cy="154.521" r="5.762"/>
+	<path fill="#FFFFFF" d="M465.558,148.76c3.181,0,5.762,2.581,5.762,5.762c0,3.184-2.581,5.763-5.762,5.763
+		s-5.762-2.579-5.762-5.763C459.796,151.341,462.377,148.76,465.558,148.76 M465.558,147.479c-3.884,0-7.042,3.158-7.042,7.042
+		c0,3.883,3.158,7.043,7.042,7.043s7.042-3.16,7.042-7.043C472.6,150.638,469.442,147.479,465.558,147.479L465.558,147.479z"/>
+	<rect x="416.265" y="206.375" fill="#FF7BAC" width="3.841" height="2.561"/>
+	<rect x="416.265" y="217.897" fill="#FF7BAC" width="3.841" height="2.561"/>
+</g>
+<line fill="none" x1="1010" y1="-534.082" x2="1010" y2="159.918"/>
+</svg>

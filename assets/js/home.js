@@ -37,7 +37,7 @@ function parallax() {
 		var layer, speed, yPos;
 		for (var i = 1; i < len /*layers.length*/ ; i++) {
 			layer = layers[i];
-			var yPos = top * (100 - layer.rate);
+			var yPos = top * layer.rate;
 			layer.setAttribute('style', 'transform: translate3d(0px, ' + Math.round(yPos) + 'px, 0px)');
 		}
 	}

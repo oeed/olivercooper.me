@@ -36,10 +36,22 @@ layout: default
 			{% for project in site.projects %}
 				<li>
 					<div class="details">
-						<a href="{{ project.link }}"><h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2></a>
+						{% if project.link %}
+							<a href="{{ project.link }}">	
+						{% endif %}
+							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
+						{% if project.link %}
+							</a>
+						{% endif %}
 						{{ project.content }}
 					</div>
-					<a href="{{ project.link }}"><div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div></a>
+					{% if project.link %}
+						<a href="{{ project.link }}">
+					{% endif %}
+						<div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div>
+					{% if project.link %}
+						</a>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>

@@ -5,7 +5,7 @@ images:
   - niesh.png
   - news.png
   - oeed.svg
-  - timeline.svg
+  - keys.png
 ---
 
 I am very passionate about designing beautiful and easy to use interfaces. Design is always the first aspect I consider.

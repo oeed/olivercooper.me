@@ -66,12 +66,13 @@
 	& > div
 		position: fixed
 		left: 0
+		bottom: 0
 		right: 0
 		top: 0
-		bottom: 0
 
 		&:after
 			content: ""
+			pointer-events: none
 			position: absolute
 			top: 0
 			bottom: 0
@@ -80,14 +81,13 @@
 			background-size: 500% auto
 			background-position: center bottom
 			background-repeat: no-repeat
-			background-position-y: top
 			background-image: url(/assets/images/parallax/layers.svg)
 
 		&.front
 			position: absolute
 			bottom: -41.67vw
 
-		&.layer-3, &.layer-4
+		&.layer-3, &.layer-3, &.layer-4
 			pointer-events: none
 			-webkit-touch-callout: none
 
@@ -103,21 +103,16 @@
 
 		&.clouds
 			background-image: url(/assets/images/parallax/clouds-dynamic.svg)
-
-			// animation: sky linear infinite 300s
+			animation: sky linear infinite 300s
 
 		&.plane
 			background-image: url(/assets/images/parallax/plane.svg)
-
-			// animation: sky linear infinite 125s
+			animation: sky linear infinite 125s
 
 	$layers: ("rangitoto", "sea", "clouds-static"), ("north-shore", "orakei"), "city", ("hobson", "st-john", "eden"), "one-tree"
 
 	@for $i from 1 through length($layers)
 		@if nth($layers, $i)
-
-				// @for $n from 1 through length(nth($layers, $i))
-
 			.layer-#{$i - 1}:after
 				background-position-x: ($i - 1) * 25%
 
