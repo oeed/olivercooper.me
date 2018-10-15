@@ -10,4 +10,4 @@ images:
   - closer.jpg
 ---
 
-I love listening to albums from start to finish. My favourite artists include Tame Impala, Radiohead, Arcade Fire, alt-J, Lorde and many more.
+I love listening to albums from start to finish. My favourite artists include The Chainsmokers and nobody else.
