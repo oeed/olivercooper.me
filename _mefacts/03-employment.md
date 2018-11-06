@@ -3,9 +3,10 @@ title: Employment
 folder: employment
 images: 
   - sizing.svg
-  - colors.svg
+  - colours.png
   - cards.png
-  - lorne.jpg
+  - boardingware.png
+  # - lorne.jpg
   - logos.svg
   - wizard.png
 ---
