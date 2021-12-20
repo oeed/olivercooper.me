@@ -26,7 +26,7 @@ $min-height: 900px
 		text-align: center
 
 		.hello
-			width: 100%
+			width: 500px
 			padding-top: 27%
 			background: url(/assets/images/hello.svg) no-repeat center
 			background-size: contain
@@ -59,6 +59,10 @@ $min-height: 900px
 				a
 					color: $titleDark
 					text-decoration: none
+					transition: 0.1s opacity ease
+
+					&:hover
+						opacity: 0.8
 
 .parallax
 	position: absolute
