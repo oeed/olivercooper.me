@@ -1,8 +1,10 @@
+$min-height: 900px
+
 .hero
 	display: flex
 	width: 100vw
 	height: 100vh
-	min-height: 800px
+	min-height: $min-height
 
 	// position: relative
 	background: $sky
@@ -63,16 +65,16 @@
 	left: 0
 	right: 0
 	top: 0
-	bottom: 0
-	min-height: 800px
+	height: 100vh
+	min-height: $min-height
 
 	& > div
 		position: fixed
 		left: 0
-		bottom: 0
+		height: 100vh
 		right: 0
 		top: 0
-		min-height: 800px
+		min-height: $min-height
 
 		&:after
 			content: ""
@@ -89,9 +91,8 @@
 
 		&.front
 			position: absolute
-			bottom: -41.67vw
 
-		&.layer-3, &.layer-3, &.layer-4
+		&.layer-1, &.layer-3, &.layer-4
 			pointer-events: none
 			-webkit-touch-callout: none
 

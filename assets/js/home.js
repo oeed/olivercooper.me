@@ -46,7 +46,8 @@ function parallax() {
 
 	var isHidden = false;
 	window.addEventListener("scroll", function(event) {
-		if (window.pageYOffset < window.innerHeight + 200) {
+        const minHeight = 900
+		if (window.pageYOffset < Math.max(window.innerHeight, minHeight) + 200) {
 			if (isHidden) {
 				isHidden = false;
 				parallaxElem.setAttribute("style", "");
