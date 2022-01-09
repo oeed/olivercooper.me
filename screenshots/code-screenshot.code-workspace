@@ -1,0 +1,102 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    // {
+    //   "path": "../../diesel"
+    // },
+    // {
+    //   "path": "../../dfd35x/"
+    // }
+    // {
+    //   "path": "../../nzcp-rs"
+    // }
+    // {
+    //   "path": "../../mqtt-garage"
+    // }
+    // {
+    //   "path": "../../async-graphql"
+    // }
+    {
+      "path": "../../Thorndyke/lib/"
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Default Light+",
+    "editor.fontFamily": " Monaco, 'Courier New', monospace",
+    "editor.fontWeight": "600",
+    "workbench.colorCustomizations": {
+      "editor.background": "#F4F4F4",
+      "sideBar.background": "#F4F4F4",
+      "sideBar.border": "#1b1b1b",
+      "activityBar.background": "#0f0f0f",
+      "activityBar.border": "#1b1b1b",
+      "sideBarSectionHeader.background": "#0e0e0e",
+      "editorGroupHeader.tabsBackground": "#0f0f0f",
+      "tab.inactiveBackground": "#1b1b1b",
+      "titleBar.activeBackground": "#0f0f0f",
+      "titleBar.border": "#1b1b1b",
+      "titleBar.inactiveBackground": "#202020",
+      "editor.foreground": "#4DB6F2"
+    },
+    "editor.guides.indentation": false,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword",
+            "keyword.operator",
+            "keyword.other.rust",
+            "keyword.control.rust",
+            "constant.language.boolean.rust",
+            "string",
+            "entity.name.type.parameter"
+          ],
+          "settings": {
+            "foreground": "#2A8BCE",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": ["markup.underline"],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": ["variable.other.rust"],
+          "settings": {
+            "foreground": "#0F5FA3",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function.rust",
+            "entity.name.function.preprocessor",
+            "entity.name.type",
+            "support.function",
+            "variable.language.self.rust",
+            "entity.name.namespace"
+          ],
+          "settings": {
+            "foreground": "#1b4787",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "comment",
+            "entity.name.type.lifetime.rust",
+            "storage.modifier.lifetime.rust"
+          ],
+          "settings": {
+            "foreground": "#4DB6F2",
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  }
+}

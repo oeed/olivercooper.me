@@ -27,14 +27,14 @@ layout: default
 	</div>
 </div>
 
-<div class="portfolio">
+<div class="portfolio rust">
 	<a name="rust"></a>
 	<h1>Rust Developer</h1>
 	<h3>A passion for the language</h3>
 	<div class="container">
         <p>I am highly passionate about and proficient in Rust, with a deep love for the language and its ecosystem. I have used Rust professionally in production for over 18 months and am a contributor to multiple widely used crates.</p>
 		<ul>
-			{% for project in site.projects %}
+			{% for project in site.rust %}
 				<li>
 					<div class="details">
 						{% if project.link %}
@@ -47,7 +47,42 @@ layout: default
 						{{ project.content }}
 					</div>
 					{% if project.link %}
-						<a href="{{ project.link }}">
+						<a href="{{ project.link }}" target="_blank">
+					{% endif %}
+						<div class="preview" style="background-image: url(/assets/images/rust/{{ project.image }})"></div>
+					{% if project.link %}
+						</a>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+		<a href="https://github.com/oeed/" class="more" target="_blank">
+			<div>See more on GitHub &gt;</div>
+		</a>
+	</div>
+</div>
+
+<div class="portfolio fullstack">
+	<a name="fullstack"></a>
+	<h1>Fullstack Developer</h1>
+	<h3>A passion for the language</h3>
+	<div class="container">
+        <p>I am highly passionate about and proficient in Rust, with a deep love for the language and its ecosystem. I have used Rust professionally in production for over 18 months and am a contributor to multiple widely used crates.</p>
+		<ul>
+			{% for project in site.rust %}
+				<li>
+					<div class="details">
+						{% if project.link %}
+							<a href="{{ project.link }}">	
+						{% endif %}
+							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
+						{% if project.link %}
+							</a>
+						{% endif %}
+						{{ project.content }}
+					</div>
+					{% if project.link %}
+						<a href="{{ project.link }}" target="_blank">
 					{% endif %}
 						<div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div>
 					{% if project.link %}
@@ -56,7 +91,43 @@ layout: default
 				</li>
 			{% endfor %}
 		</ul>
-		<a href="https://github.com/oeed/" class="more">
+		<a href="https://github.com/oeed/" class="more" target="_blank">
+			<div>See more on GitHub &gt;</div>
+		</a>
+	</div>
+</div>
+
+
+<div class="portfolio design">
+	<a name="design"=></a>
+	<h1>Designer</h1>
+	<h3>A love of simplicity and elegance</h3>
+	<div class="container">
+        <p>I am highly passionate about and proficient in Rust, with a deep love for the language and its ecosystem. I have used Rust professionally in production for over 18 months and am a contributor to multiple widely used crates.</p>
+		<ul>
+			{% for project in site.rust %}
+				<li>
+					<div class="details">
+						{% if project.link %}
+							<a href="{{ project.link }}">	
+						{% endif %}
+							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
+						{% if project.link %}
+							</a>
+						{% endif %}
+						{{ project.content }}
+					</div>
+					{% if project.link %}
+						<a href="{{ project.link }}" target="_blank">
+					{% endif %}
+						<div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div>
+					{% if project.link %}
+						</a>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+		<a href="https://github.com/oeed/" class="more" target="_blank">
 			<div>See more on GitHub &gt;</div>
 		</a>
 	</div>

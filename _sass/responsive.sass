@@ -1,8 +1,8 @@
-$width-max: 1100px
+$width-max: 1200px
 $width-large: 900px
 $width-medium: 700px
 $width-small: 350px
-$sizes: 350px, 700px, 900px, 1100px
+$sizes: 350px, 700px, 900px, 1200px
 
 =min-width($width)
 	@media only screen and (min-width: $width)
@@ -57,14 +57,12 @@ $sizes: 350px, 700px, 900px, 1100px
 	+large
 		@content
 
-
 	+max
 		@content
 
 =gt-medium
 	+medium
 		@content
-
 
 	+gt-large
 		@content

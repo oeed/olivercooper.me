@@ -1,8 +1,16 @@
 .portfolio
 	position: relative
 	overflow: auto
-	background: $ground
 	color: white
+
+	&.rust
+		background: $ground
+
+	&.fullstack
+		background: #02225D
+
+	&.design
+		background: #00488C
 
 	h2
 		font-size: 40px
@@ -28,8 +36,9 @@
 		p
 			font-size: 22px
 			font-weight: 300
-			max-width: 480pxa
+			max-width: 550px
 			display: inline-block
+			text-align: justify
 
 	.preview
 		width: 500px
@@ -48,9 +57,11 @@
 			transform: scale(0.97)
 
 	.container > p
+		margin: 0 auto
 		margin-top: -75px
 		margin-bottom: 100px
 		text-align: center
+		max-width: 1000px
 		font-size: 19px
 		font-weight: 300
 		display: block
