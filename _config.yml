@@ -36,5 +36,6 @@ timezone: Pacific/Auckland
 
 collections:
   - rust
-  # - fullstack
+  - fullstack
+  - design
   - mefacts

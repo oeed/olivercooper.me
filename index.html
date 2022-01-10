@@ -38,7 +38,7 @@ layout: default
 				<li>
 					<div class="details">
 						{% if project.link %}
-							<a href="{{ project.link }}">	
+							<a href="{{ project.link }}" target="_blank">	
 						{% endif %}
 							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
 						{% if project.link %}
@@ -65,15 +65,15 @@ layout: default
 <div class="portfolio fullstack">
 	<a name="fullstack"></a>
 	<h1>Fullstack Developer</h1>
-	<h3>A passion for the language</h3>
+	<h3>Versatile and experienced</h3>
 	<div class="container">
-        <p>I am highly passionate about and proficient in Rust, with a deep love for the language and its ecosystem. I have used Rust professionally in production for over 18 months and am a contributor to multiple widely used crates.</p>
+        <p>I have deep experience in every layer of modern applications, from complex CSS animations on the frontend through to distributed backend systems.</p>
 		<ul>
-			{% for project in site.rust %}
+			{% for project in site.fullstack %}
 				<li>
 					<div class="details">
 						{% if project.link %}
-							<a href="{{ project.link }}">	
+							<a href="{{ project.link }}" target="_blank">	
 						{% endif %}
 							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
 						{% if project.link %}
@@ -84,7 +84,7 @@ layout: default
 					{% if project.link %}
 						<a href="{{ project.link }}" target="_blank">
 					{% endif %}
-						<div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div>
+						<div class="preview" style="background-image: url(/assets/images/fullstack/{{ project.image }})"></div>
 					{% if project.link %}
 						</a>
 					{% endif %}
@@ -99,17 +99,17 @@ layout: default
 
 
 <div class="portfolio design">
-	<a name="design"=></a>
+	<a name="design"></a>
 	<h1>Designer</h1>
 	<h3>A love of simplicity and elegance</h3>
 	<div class="container">
         <p>I am highly passionate about and proficient in Rust, with a deep love for the language and its ecosystem. I have used Rust professionally in production for over 18 months and am a contributor to multiple widely used crates.</p>
 		<ul>
-			{% for project in site.rust %}
+			{% for project in site.design %}
 				<li>
 					<div class="details">
 						{% if project.link %}
-							<a href="{{ project.link }}">	
+							<a href="{{ project.link }}" target="_blank">	
 						{% endif %}
 							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
 						{% if project.link %}
@@ -120,16 +120,13 @@ layout: default
 					{% if project.link %}
 						<a href="{{ project.link }}" target="_blank">
 					{% endif %}
-						<div class="preview" style="background-image: url(/assets/images/portfolio/{{ project.image }})"></div>
+						<div class="preview" style="background-image: url(/assets/images/design/{{ project.image }})"></div>
 					{% if project.link %}
 						</a>
 					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
-		<a href="https://github.com/oeed/" class="more" target="_blank">
-			<div>See more on GitHub &gt;</div>
-		</a>
 	</div>
 </div>
 

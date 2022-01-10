@@ -96,4 +96,15 @@ function throttle(func, wait, options) {
 
 $(document).ready(function() {
 	parallax();
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+	
+			const name = this.getAttribute('href').substr(1)
+			document.querySelector(`a[name="${name}"]`).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
 });
