@@ -1,7 +1,25 @@
+.aboutme, .portfolio.fullstack, .portfolio.design
+	&:before
+		content: ""
+		display: block
+		width: 100vw
+		height: 9vw
+		background-image: url("/assets/images/transition.svg")
+		background-repeat: no-repeat
+		background-size: 300%
+		background-position-y: top
+
+	&.design::before
+		background-position-x: 50%
+
+	&.aboutme::before
+		background-position-x: 100%
+
 .portfolio
 	position: relative
 	overflow: auto
 	color: white
+	padding-bottom: 80px
 
 	&.rust
 		background: $ground
@@ -80,10 +98,12 @@
 +max
 	.portfolio
 		h2
-			margin-bottom: 15px
+			margin-bottom: 3px
+			margin-top: 0
 
 		li
 			display: flex
+			align-items: center
 			margin-bottom: 120px
 
 			&:nth-child(even)
