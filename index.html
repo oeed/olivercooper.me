@@ -15,9 +15,8 @@ layout: default
 				<h1>Oliver Cooper</h1>
 				<h2>Auckland, New Zealand</h2>
 				<ul class="links">
-					<li><a href="#rust">Rust</a></li>
-					<li><a href="#fullstack">Fullstack</a></li>
-					<li><a href="#design">Design</a></li>
+					<li><a href="#rust">Software Engineer</a></li>
+					<li><a href="#employment">UX Designer</a></li>
 				</ul>
 			</div>
 			<div class="gap"></div>
@@ -27,106 +26,91 @@ layout: default
 	</div>
 </div>
 
-<div class="portfolio rust">
-	<a name="rust"></a>
-	<h1>Rust Developer</h1>
-	<h3>A passion for the language</h3>
+<div class="portfolio skills">
+	<a name="skills"></a>
+	<h3>Always eager for a challlenge</h3>
 	<div class="container">
-        <p>I am highly passionate about and proficient in Rust, with a deep love for the language and its ecosystem. I have used Rust professionally in production for over 18 months and am a contributor to multiple widely used crates.</p>
-		<ul>
-			{% for project in site.rust %}
-				<li>
-					<div class="details">
-						{% if project.link %}
-							<a href="{{ project.link }}" target="_blank">	
-						{% endif %}
-							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
-						{% if project.link %}
-							</a>
-						{% endif %}
-						{{ project.content }}
-					</div>
-					{% if project.link %}
-						<a href="{{ project.link }}" target="_blank">
-					{% endif %}
-						<div class="preview" style="background-image: url(/assets/images/rust/{{ project.image }})"></div>
-					{% if project.link %}
-						</a>
-					{% endif %}
-				</li>
+        <p>I have over 6 years of professional software development and design experience, and 7 years experience preceding that writing personal/open-source projects. I thrive with a challenge, excelling at assessing the nuance in a client’s needs, then delivering fast, elegant solutions to those problems.</p>
+		<h1>Skills</h1>
+
+		<ul class="rows">
+			{% for skill in site.skills %}
+			<li>
+				<h2>{{ skill.title }}</h2>
+				<div class="content">
+					{{ skill.content }}
+				</div>
+			</li>
 			{% endfor %}
 		</ul>
-		<a href="https://github.com/oeed/" class="more" target="_blank">
-			<div>See more on GitHub &gt;</div>
-		</a>
 	</div>
 </div>
 
-<div class="portfolio fullstack">
-	<a name="fullstack"></a>
-	<h1>Fullstack Developer</h1>
+<div class="portfolio employment">
+	<a name="employment"></a>
+	<h1>Employment</h1>
 	<h3>Versatile and experienced</h3>
 	<div class="container">
-        <p>I have deep experience in every layer of modern applications, from complex CSS animations on the frontend through to distributed backend systems.</p>
-		<ul>
-			{% for project in site.fullstack %}
+        <p>I have deep experience in every layer of modern applications, from distributed backend systems and cloud infrastructure, to complex CSS animations on the frontend.</p>
+		<ul class="rows">
+			{% for project in site.employment %}
 				<li>
-					<div class="details">
+					<h2>{{ project.title }}</h2>
+					<h3>{{ project.type }} <span class="years">{{ project.years }}</span></h3>
+					<div class="content">
+						<div class="details">
+							{{ project.content }}
+						</div>
 						{% if project.link %}
-							<a href="{{ project.link }}" target="_blank">	
+							<a href="{{ project.link }}" target="_blank">
 						{% endif %}
-							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
+							<div class="preview" style="background-image: url(/assets/images/employment/{{ project.image }})"></div>
 						{% if project.link %}
 							</a>
 						{% endif %}
-						{{ project.content }}
 					</div>
-					{% if project.link %}
-						<a href="{{ project.link }}" target="_blank">
-					{% endif %}
-						<div class="preview" style="background-image: url(/assets/images/fullstack/{{ project.image }})"></div>
-					{% if project.link %}
-						</a>
-					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+
+
+<div class="portfolio opensource">
+	<a name="opensource"></a>
+	<h1>Open Source Projects</h1>
+	<h3>A love for the ecosystem</h3>
+	<div class="container">
+        <p>I am very passionate about the open-source community and have led and contributed to multiple projects. For a more comprehensive list of my projects see <a href="https://github.com/oeed/" target="_blank">my GitHub profile, oeed</a>.</p>
+		<ul class="rows">
+			{% for project in site.opensource %}
+				<li>
+					<div class="content">
+						<div class="details">
+							{% if project.link %}
+								<a href="{{ project.link }}" target="_blank">	
+							{% endif %}
+								<h2>{{ project.title }} </h2>
+								<h3>{{ project.type }}</h3>
+							{% if project.link %}
+								</a>
+							{% endif %}
+							{{ project.content }}
+						</div>
+						{% if project.link %}
+							<a href="{{ project.link }}" target="_blank">
+						{% endif %}
+							<div class="preview" style="background-image: url(/assets/images/opensource/{{ project.image }})"></div>
+						{% if project.link %}
+							</a>
+						{% endif %}
+					</div>
 				</li>
 			{% endfor %}
 		</ul>
 		<a href="https://github.com/oeed/" class="more" target="_blank">
 			<div>See more on GitHub &gt;</div>
 		</a>
-	</div>
-</div>
-
-
-<div class="portfolio design">
-	<a name="design"></a>
-	<h1>Designer</h1>
-	<h3>A love of simplicity and elegance</h3>
-	<div class="container">
-        <p>I believe design to be utterly critical to a products success and excel at designing simple, pleasing user interfaces.</p>
-		<ul>
-			{% for project in site.design %}
-				<li>
-					<div class="details">
-						{% if project.link %}
-							<a href="{{ project.link }}" target="_blank">	
-						{% endif %}
-							<h2>{{ project.title }} <span class="type">{{ project.type }}</span></h2>
-						{% if project.link %}
-							</a>
-						{% endif %}
-						{{ project.content }}
-					</div>
-					{% if project.link %}
-						<a href="{{ project.link }}" target="_blank">
-					{% endif %}
-						<div class="preview" style="background-image: url(/assets/images/design/{{ project.image }})"></div>
-					{% if project.link %}
-						</a>
-					{% endif %}
-				</li>
-			{% endfor %}
-		</ul>
 	</div>
 </div>
 
@@ -134,7 +118,7 @@ layout: default
 	<a name="aboutme"></a>
 	<h1>About Me</h1>
 	<div class="container">
-		<ul>
+		<ul class="rows">
 			{% for mefact in site.mefacts %}
 				<li>
 					<div class="details">

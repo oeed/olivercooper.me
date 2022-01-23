@@ -35,7 +35,7 @@ future: true
 timezone: Pacific/Auckland
 
 collections:
-  - rust
-  - fullstack
-  - design
+  - skills
+  - employment
+  - opensource
   - mefacts

@@ -9,6 +9,4 @@ images:
   - auckland.jpg
 ---
 
-I currently live in central Auckland, New Zealand.
-
-I have lived all over Australia and New Zealand - six cities to be exact.
+I currently live in central Auckland, New Zealand, but have lived all over Australia and New Zealand - six cities to be exact.

@@ -10,6 +10,24 @@ images:
   - auckland2.jpg
 ---
 
-I graduated with a conjoint degree majoring in computer science, marketing and information systems from The University of Auckland.
+### The University of Auckland
 
-I also attended St Peter's College in Adelaide where I was prefect and house captain.
+#### Bachelor of Science/Bachelor of Commerce
+
+Majoring in:
+
+- Computer Science
+- Information Systems
+- Marketing
+
+Achievements:
+
+- 3 ⨉ First in Course Award
+- 13 ⨉ Certificate of Outstanding Achievement
+- GPA: 7.78/9
+
+### St Peter's College, Adelaide
+
+#### Secondary School
+
+Prefect and House Captain

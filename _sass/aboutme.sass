@@ -4,7 +4,7 @@
 	color: white
 	overflow-x: hidden
 
-	li
+	ul.rows > li
 		margin-bottom: 120px
 
 		.details
@@ -15,12 +15,43 @@
 		.cards
 
 	h2
-		font-size: 44px
+		font-size: 32px
 		text-transform: uppercase
 		font-weight: bold
 		font-style: italic
 		letter-spacing: 0.06em
 		margin-bottom: 15px
+		text-align: left
+
+	h3
+		font-size: 24px
+		font-weight: bold
+		color: #c5e9ff
+		margin-bottom: 5px
+		text-align: left
+		margin-top: 22px
+
+	ul + h3
+		margin-top: 35px
+
+	h4
+		font-weight: normal
+		font-style: italic
+		font-size: 18px
+		color: #eaf7ff
+		text-align: left
+		margin-top: 0
+		margin-bottom: 15px
+		text-transform: uppercase
+
+	p
+		margin-bottom: 7px
+
+	ul ul li
+		margin-bottom: 0.4em
+
+		&:before
+			background: #c5e9ff
 
 .cards
 	width: 100%

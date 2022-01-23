@@ -1,4 +1,4 @@
-.aboutme, .portfolio.fullstack, .portfolio.design
+.aboutme, .portfolio.employment, .portfolio.opensource
 	&:before
 		content: ""
 		display: block
@@ -9,7 +9,7 @@
 		background-size: 300%
 		background-position-y: top
 
-	&.design::before
+	&.opensource::before
 		background-position-x: 50%
 
 	&.aboutme::before
@@ -21,43 +21,54 @@
 	color: white
 	padding-bottom: 80px
 
-	&.rust
+	&.skills, &.employment
+		p
+			color: #eaf7ff
+
+	&.skills
 		background: $ground
 
-	&.fullstack
-		background: #02225D
+	&.employment
+		background: #051750
 
-	&.design
+	&.opensource
 		background: #00488C
 
 	h2
-		font-size: 40px
+		font-size: 32px
 		text-transform: uppercase
 		font-weight: bold
 		font-style: italic
 		letter-spacing: 0.06em
 		margin-bottom: 0
 
-		.type
-			font-size: 24px
-			font-weight: normal
-			color: #69a6e3
-			margin-left: 10px
-			vertical-align: middle
+	li h3
+		font-size: 24px
+		color: #69a6e3
+		text-align: left
+		margin-bottom: 15px
+		margin-top: 5px
 
-	li
+		.years
+			color: #3671ad
+			font-size: 18px
+			margin-left: 10px
+
+	ul.rows > li
 		margin-bottom: 90px
 
 	.details
 		text-align: center
 
 		p
-			max-width: 550px
 			display: inline-block
 
+			&:first-child
+				margin-top: 0
+
 	.preview
-		width: 500px
-		height: 310px
+		width: 480px
+		height: 298px
 		flex: 0 0 auto
 		background-size: cover
 		background-repeat: no-repeat
@@ -77,9 +88,22 @@
 		margin-bottom: 100px
 		text-align: center
 		max-width: 1000px
-		font-size: 19px
+		font-size: 18px
 		display: block
-		color: #eaf7ff
+
+	.content
+		margin-top: 15px
+
+	&.skills
+		.container > p:first-child
+			margin-bottom: 200px
+			text-align: justify
+
+		ul.rows > li
+			margin-bottom: 50px
+			p
+				margin-top: 0
+				margin-bottom: 0
 
 +max-width(550px)
 	.hero .welcome .hello
@@ -97,29 +121,47 @@
 			margin-bottom: 3px
 			margin-top: 0
 
-		li
-			display: flex
-			align-items: center
-			margin-bottom: 150px
+		ul.rows > li
+			margin-bottom: 130px
+
+			.content
+				display: flex
 
 			&:nth-child(even)
+				p
+					text-align: right
+
 				.details
 					order: 2
-					text-align: right
 					margin-right: 0
 					margin-left: 100px
+					text-align: right
+
+				h2, h3
+					text-align: right
 
 		.details
 			text-align: initial
 			margin-right: 100px
 			flex-grow: 1
 
+		&.skills ul.rows > li
+			p
+				max-width: 45%
+
+			&:nth-child(even)
+				p
+					margin-left: auto
+
 	.aboutme
-		ul li
+		ul.rows > li
 			display: flex
 			margin-bottom: 120px
 
 			&:nth-child(even)
+				h2, p
+					text-align: right
+
 				.details
 					order: 2
 					text-align: right
@@ -143,10 +185,6 @@
 		.preview
 			width: 350px
 			height: 217px
-
-		h2 .type
-			margin-left: 0
-			display: block
 
 .more
 	text-align: center
